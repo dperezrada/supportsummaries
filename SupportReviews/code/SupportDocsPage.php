@@ -111,12 +111,13 @@ class SupportDocsPage_Controller extends Page_Controller {
 		if($years) {
 			$ago = strtotime("$years years ago");			
 			$start_date = date('Y-m-d', $ago);
-			$filter = "Created > $start_date AND ";
+			$filter = "`DateOfReview` > '$start_date' AND ";
 		}
 		$locale = $this->Locale;
 		$percat = DataObject::get("SupportReview","$filter `Published` = true AND `Locale` ='".$locale."'", null, null, $this->getLimit());
 		if(!$percat) {
-			return $this->httpError(404, _t('SupportDocsPage.NOTFOUD',"Sorry that review could not be found"));
+			$percat = Array();
+			// return $this->httpError(404, _t('SupportDocsPage.NOTFOUD',"Sorry that review could not be found"));
 		}
 		return array(
 			"Reviews" => $percat,
