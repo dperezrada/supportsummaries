@@ -66,15 +66,17 @@ class Page_Controller extends ContentController {
 		$data = $_REQUEST; 
 		$query = htmlspecialchars($data['Search'], ENT_QUOTES,'UTF-8'); 
 		$locale = $this->Locale;
+		if(!isset($_GET['start']) || !is_numeric($_GET['start']) || (int)$_GET['start'] < 1) $_GET['start'] = 0;
+		$SQL_start = (int)$_GET['start'];
 //		$pages = DataObject::get("SiteTree","MATCH (Title,Content) AGAINST ('$query' IN BOOLEAN MODE) AND `Locale` ='".$locale."'");
-		$Reviews = DataObject::get("SupportReview","MATCH (Title, Summary,Background, AboutSummaryTable,SummaryOfFindings, RelevanceOfTheReview, AdditionalInformation) AGAINST ('$query' IN BOOLEAN MODE) AND `Published` = 1 AND `Locale` ='".$locale."'");
-		$searchresults = new DataObjectSet();
+		$Reviews = DataObject::get("SupportReview","MATCH (Title, Summary,Background, AboutSummaryTable,SummaryOfFindings, RelevanceOfTheReview, AdditionalInformation) AGAINST ('$query' IN BOOLEAN MODE) AND `Published` = 1 AND `Locale` ='".$locale."'", 0, 0, "{$SQL_start},10");
+		// $searchresults = new DataObjectSet();
 //		$searchresults->merge($pages);
-		$searchresults->merge($Reviews);
+		// $searchresults->merge($Reviews);
 
 		if(!empty($data['Search'])){
 			$templateData = array(
-				'Results' => $searchresults,
+				'Results' => $Reviews,
 				'SearchQueryTitle' => $form->getSearchQuery($data),
 				"SupportURL" => $SupportDocsPage->URLSegment
 			);
