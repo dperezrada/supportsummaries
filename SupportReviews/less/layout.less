@@ -1,0 +1,101 @@
+@import "base.less";
+@import "bothsites.less";
+@import "adjustments.less";
+
+.button:hover,button:hover {
+	cursor: pointer;
+}
+
+.button::-moz-focus-inner,button::-moz-focus-inner {
+	border: 0;
+}
+
+body {
+	background: #fff url('../images/main_bg.png') repeat-x;
+}
+
+.wrapper {
+	width: @ancho_sitio;
+	margin: 0 auto;
+}
+
+
+
+#ft {
+	background: url(../images/footer.png) repeat-x 0 60px;
+	.container {
+		height: 30px;
+	}
+
+}
+input.text{
+		background-color: #fff;
+		border: 1px solid #ccc;
+		padding: 5px;
+		.border-radius(3px);
+		.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+		.transition(@transition);
+
+		// Focus state
+		&:focus {
+			border-color: rgba(82,168,236,.8);
+			outline: 0;
+			outline: thin dotted \9; /* IE6-9 */
+			.box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)");
+		}
+}
+
+.box {
+	margin: 10px;
+	padding: 20px;
+	background: #fff;
+}
+
+#Page #bd .wrapper,
+#HomePage #bd .wrapper{
+	width: 600px;
+	margin: 0 auto;
+}
+#dospuntocero {
+	width: 50px;
+	right: 0;
+	top: 10px;
+	background: url(../images/dospuntocero.png) no-repeat right top;
+	.text_replacement;
+	.abs;
+}
+
+.photo {
+	top: 0;
+	img {
+		border: none !important;
+	}
+
+}
+
+.featured {
+	margin: 0 10px;
+}
+
+#HomePage .search{
+	top:0;
+	left:inherit;
+	width: 600px;
+	#SearchForm_SearchForm{
+		#Search{
+			input.text{
+				width: 476px;
+			}
+		}
+	}
+	.browse{
+		span{
+			display: inline;
+		}
+		right:-140px;
+		top:1px;
+	}
+}
+
+
+

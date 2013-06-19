@@ -1,0 +1,230 @@
+/* @override 
+	http://umbe.god.cl/SupportReviews/css/SupportReviewsForPrint.css
+*/
+html,body{
+	background: #fff;
+}
+
+#print{
+	display: none;
+}
+#SupportReview #hd {
+	display: none !important;
+}
+
+table tbody tr td img {
+	margin-right: -4px;
+}
+
+
+#SupportReview #nav ul li a.lvl1 {
+	background: #0070bb;
+	line-height: 22px;
+}
+
+#SupportReview #bd{
+	background-color: #eee;
+}
+
+#SupportReview #bd .wrapper {
+	background: #fff;
+	padding: 15px;
+	margin-bottom: 1em;
+}
+.pagebreak {
+	page-break-after:always;	
+}
+
+#SupportReview #nav ul li a.lvl1:hover {
+	background: #1a1364;
+}
+
+#SupportReview #hd {
+	padding: 10px 0 0;
+}
+
+
+#SupportReview p.date {
+	color: #333;
+}
+
+#SupportReview #ft ,
+#SupportReview .titular{
+	display: none;
+}
+
+#SupportReview .typography h1{
+	border: 5px solid #43adde;
+	border-width: 9px 0px;
+	padding: 10px 0;
+	font-size: 33px;
+	line-height: 1.2em;
+}
+#SupportReview .typography h2{
+	border-top: 5px solid #43adde;
+	padding-top: 10px;
+}
+
+#SupportReview .typography h1,
+#SupportReview .typography h2,
+#SupportReview .typography h3,
+#SupportReview .typography h4,
+#SupportReview .typography h5{
+	color: #333;	
+	margin-bottom: 1em;
+}
+
+#SupportReview .typography ul {
+	margin: 0 0 20px;
+}
+#SupportReview .typography ul li{
+	margin: 0;
+}
+#SupportReview .typography ul li li{
+	background: none;
+	list-style-type: square;
+	padding: 0;
+	margin-left: 5px;
+}
+
+#SupportReview #AboutSummaryTable{
+	border: 5px solid #43adde;
+	padding: 10px;
+}
+
+#SupportReview #AboutSummaryTable h2{
+	border: none;
+	font-size: 20px;
+}
+
+#AboutSummaryTable table thead tr th {
+	border-top: 1px solid #a9a9a9;
+	border-bottom: 1px solid #4e4e4e;	
+}
+
+#AboutSummaryTable table tr td {
+	text-align: left;	
+	padding: 5px ;
+	border-bottom: 1px solid #4e4e4e;
+	vertical-align: top;
+}
+#AboutSummaryTable table thead tr th span.hide {
+	visibility: hidden;
+}
+
+#SummaryOfFindings ol {
+	margin: 0 0 20px;
+}
+
+#SummaryOfFindings ol li {
+	margin: 0 0 15px;
+	list-style: none;
+	background: url(../images/lvl1bullet.png) no-repeat;
+	padding-left: 20px;
+	padding-right: 0;
+	color: #333;
+	font-weight: bold;
+}
+#SummaryOfFindings table{
+	page-break-before:always;
+}
+#SummaryOfFindings table,
+#SummaryOfFindings table tr,
+#SummaryOfFindings table tr td {
+	vertical-align: top;
+	border: 2px solid #4e4e4e;	
+	text-align: left;
+}
+
+#SummaryOfFindings table tbody tr td.titles.blue {
+	background-color: #096fad;
+	color: #fff;
+}
+
+#SummaryOfFindings table tbody tr td.titles.grey {
+	background-color: #cbcccb;
+}
+
+#SummaryOfFindings table tbody tr td.grey {
+	background-color: #ebebeb;
+}
+
+#RelevanceOfTheReview table tr th,
+#RelevanceOfTheReview table tr td{
+	text-align: left;
+	vertical-align: top;
+}
+
+#RelevanceOfTheReview table tbody tr td.subtitle {
+	background-color: #ebebeb;
+	border: 1px solid #4e4e4e;
+	border-width: 1px 0px;
+}
+#AdditionalInformation p{
+	margin: 0;
+}
+#AdditionalInformation p strong {
+	color: #333;
+	margin-top: 1em;
+	display: block;
+}
+#RelevanceOfTheReview table tbody tr td{
+	padding: 5px;
+}
+
+#RelevanceOfTheReview table tbody tr td ul {
+	margin-left: 20px;
+}
+#RelevanceOfTheReview table tbody tr th {
+	color: #fff;
+	background-color: #43adde;
+	padding: 5px;
+}
+#RelevanceOfTheReview table hr{
+	border-bottom: solid 1px #444;
+	
+}
+
+#SummaryFor div.supporter div.supporterinfo {
+	margin-left: 120px;
+}
+
+.sidebar {
+	padding: 5px;
+	border: 3px solid #43adde;
+	font-size: 90%;
+	line-height: 120%;
+}
+
+.sidebar strong {
+	color: #333;
+	font-weight: bold;
+}
+
+#SupportReview .sidebar h4 {
+	letter-spacing: -1px;
+	color: #096fad;
+}
+
+#SupportReview .sidebar a {
+	word-wrap: break-word
+}
+
+#SupportReview .sidebar hr {
+	border-bottom: solid 1px #444;
+}
+#SupportReview .sidebar p,
+#SupportReview .sidebar li{
+	font-size: 12px;
+	line-height: 1.2em;
+}
+#SupportReview .sidebar li{
+	margin: 0;
+	list-style: none;
+	background: url(../images/lvl1bullet.png) no-repeat;
+	padding-left: 20px;
+	padding-right: 0;	
+}
+#disqus_thread{
+	display: none;
+}

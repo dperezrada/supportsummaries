@@ -1,0 +1,367 @@
+@import "reset.less";
+@import "mixins.less";
+@import "variables.less";
+@import "fonts.less";
+@import "percent_grid.less";
+@import "superfish.less";
+@import "bothsites.less";
+@import "adjustments.less";
+
+body {
+	background: #fff url('../images/main_bg.png') repeat-x;
+	padding-bottom: 30px;
+	
+	&#SupportReview{
+		background: #f7f7f7 url('../images/main_bg.png') repeat-x;
+	}
+}
+
+#SupportDocsPage{
+	#hd{
+		height: 160px;
+	}
+	.typography{
+		 h1 {
+			color: #111;
+			font-size: 2em;
+		}
+		 a {
+			color: #096fad;
+		}
+		a:visited{
+			color: #2599da;	
+		}
+	}
+} 
+
+#SupportReview{
+	
+	.grid_3-4 {
+		width: 620px;
+	}
+	.grid_1-4 {
+		width: 270px;
+	}
+	
+
+	#hd{
+		height: 120px;
+		padding: 0em;
+	}
+	.slogan{
+		p{
+			display: none;
+		}
+	}
+
+	#bd{
+		padding-top: 10px;
+		.wrapper {
+			background: #fff;
+			padding: 15px;
+			border: 1px solid #bbb;
+			margin-bottom: 1em;
+		}
+	
+		ul li{
+			margin: 0 0 10px;
+			list-style: none;
+			background: url(../images/lvl1bullet.png) no-repeat;
+			padding-left: 20px;
+			padding-right: 0;	
+		}		
+		
+		img {
+			padding: 0;
+			.border-radius(none);
+			border:none;
+		}
+		
+		
+		.wrapper {
+			padding: 0px;
+			width: 900px;
+			margin: auto;
+			-moz-box-shadow: 2px 2px 4px #ccc;
+			-webkit-box-shadow: 2px 2px 4px #ccc;
+			box-shadow: 2px 2px 4px #ccc;
+			padding: 20px 10px 10px 10px;
+			margin-bottom: 20px;
+		}
+		.grid_3-4 .box{
+			margin: 0 15px 0 0;
+		}
+		a{
+			color: #096FAD;
+			&:visited{
+				color: #2599da;
+			}
+		}
+		p, li{
+			font-size: 13px;
+			line-height: 155%;
+			color: #111;
+		}
+
+		.pagebreak {
+			page-break-after:always;	
+		}
+	
+		p.date {
+			color: #111;
+		}
+		
+		#ft,.titular{
+			display: none;
+		}
+	
+		.typography{
+			h1{
+				border: 5px solid #4d9dd9;
+				border-width: 8px 0px;
+				padding: 14px 0;
+				font-size: 24px;
+				line-height: 1.2em;
+				color: #111;
+			}
+			h2{
+				border-top: 8px solid #4d9dd9;
+				padding-top: 10px;
+				font-size: 24px;
+				color: #111;
+			}
+
+			.sidebar .box {
+				margin: 0;
+			}
+
+			h1,h2,h3,h4,h5{
+				color: #111;	
+				margin-bottom: 1em;
+			}
+			ul {
+				margin: 0 0 20px;
+				padding: 0;
+				li{
+					margin: 0;
+					li{
+						background: none;
+						list-style-type: square;
+						padding: 0;
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+	
+		#AboutSummaryTable{
+			border: 5px solid #4d9dd9;
+			padding: 10px;
+
+			h2{
+				border: none;
+				font-size: 20px;
+				padding-top: 0;
+			}
+		
+			table{
+			
+				thead tr th {
+					border-top: 1px solid #a9a9a9;
+					border-bottom: 1px solid #4e4e4e;	
+
+					span.hide {
+						visibility: hidden;
+					}
+				}
+
+				tr{
+					td{
+						text-align: left;	
+						padding: 10px ;
+						border-bottom: 1px solid #4e4e4e;
+						vertical-align: top;
+						font-size: 13px;
+						color: #111;
+
+						p{
+							color: #111;
+							border: none;
+							margin-bottom: 10px;
+							font-size: 13px;	
+						}
+					}
+				}
+
+				tbody tr {
+					td:nth-child(4),
+					td:nth-child(5) {
+						width: 70px;
+					}
+					td:nth-child(2),
+					td:nth-child(3) {
+						width: 470px;
+					}
+				}
+			}
+		}
+	
+	
+		#SummaryOfFindings{
+			ol {
+				margin: 0 0 20px;
+				li {
+					margin: 0 0 15px;
+					padding-left: 20px;
+					padding-right: 0;
+					color: #111;
+					font-weight: bold;
+				}
+			}
+			table{
+				tr,
+				tr td {
+					vertical-align: top;
+					border: 2px solid #4e4e4e;
+					text-align: left;
+				}
+			
+				tbody tr{
+					td.titles.blue {
+						background-color: #096fad;
+						color: #fff;
+					}
+					td.titles.grey {
+						background-color: #cbcccb;
+					}
+					td.grey {
+						background-color: #ebebeb;
+						font-weight: bold;
+					}
+				} 
+			}
+		} 
+
+		#RelevanceOfTheReview{
+			table tr{
+				th,td{
+					text-align: left;
+					vertical-align: top;
+				}
+				td.subtitle {
+					background-color: #ebebeb;
+					border: 1px solid #4e4e4e;
+					border-width: 1px 0px;
+				}
+			}
+		}
+
+		#AdditionalInformation{
+			p{
+				margin: 0;
+
+				strong {
+					color: #111;
+					margin-top: 1em;
+					display: block;
+				}
+			}
+			table{
+				tbody{
+					tr{
+		 				td{
+							padding: 5px;
+							width: 50%;
+							ul {
+								margin-left: 20px;
+							}
+							th {
+								color: #fff;
+								background-color: #4d9dd9;
+								padding: 5px;
+							}
+						}
+					}
+				}
+				hr{
+					border-bottom: solid 1px #444;
+				}
+			}
+			#SummaryFor{
+				div.supporter div.supporterinfo {
+					margin-left: 120px;
+				}
+			}
+		}
+		.sidebar {
+			padding: 5px;
+			border: 3px solid #4d9dd9;
+			font-size: 90%;
+			line-height: 120%;
+
+			strong {
+				color: #111;
+				font-weight: bold;
+			}
+			h4 {
+				color: #111;
+				font-size: 1.3em;
+				line-height: 1.25em;
+			}
+			a {
+				word-wrap: break-word
+			}
+			hr {
+				border-bottom: solid 1px #444;
+			}	
+			p,li{
+				font-size: 12px;
+				line-height: 1.25em;
+				color: #333;
+			}
+		}
+
+		#SupportReview{
+			 h3{
+				font-size: 1.4em;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			ol li {
+				padding: 0;
+				margin-left: 30px;
+				color: #333;
+				font-size: 14px;
+			}
+		}
+		#disqus_thread ul li{
+			background: none;
+			padding-left: 0;
+		}
+
+
+		#SummaryOfFindings{
+			 h2 {
+				width: 72%;
+			}
+			.sidebar {
+				float: right;
+				width: 25%;
+				margin-left: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+.typography{
+	#searchSidebar{
+		a.current{
+			color: #1A2A47;
+		}
+		a:visited{
+			color: #096fad;
+		}
+	}
+}
+
+
