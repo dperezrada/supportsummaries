@@ -46,5 +46,5 @@ ShortcodeParser::get()->register(
 FulltextSearchable::enable();
 Sitetree::set_create_default_pages(false);
 
-Security::setDefaultAdmin('dos', 'q1w2e3');
+Security::setDefaultAdmin('admin', 'admin');
 Object::add_extension('SupportReview','URLSegmentDecorator');

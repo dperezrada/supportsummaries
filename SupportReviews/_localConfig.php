@@ -7,7 +7,7 @@ $GLOBALS['databaseConfig'] = array(
 "type" => "MySQLDatabase",
 "server" => "localhost",
    "username" => "root",
-   "password" => "",
+   "password" => "root",
    "database" => "supportsummaries"
 );
 
