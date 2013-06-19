@@ -34,6 +34,16 @@
 						</ul>					
 						<h4>This summary is based on the following systematic review:</h4>
 						<p>$SummaryBasedOn</p>
+						<% if PDQLink %>
+						<p>
+							<a href="$PDQLink">See in PDQ-Evidence</a>
+						</p>
+						<% end_if %>
+						<% if CochraneLink %>
+						<p>
+							<a href="$CochraneLink">See in Cochrane Library</a>
+						</p>
+						<% end_if %>
 						<h4>What is a systematic review?</h4>
 						<p>A summary of studies addressing a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise the relevant research, and to collect and analyse data from the included studies.	</p>
 						<hr>
@@ -76,7 +86,10 @@
 			<div id="AboutSummaryTable">  
 				<h2>About the systematic review underlying this summary</h2>
 				$AboutSummaryTable
-				<p>$SummaryBasedOn</p>
+				<p>
+					$SummaryBasedOn
+				</p>
+				
 			</div>
 			
 		</div><!--.container-->	
@@ -134,6 +147,13 @@
 					<div id="AdditionalInformation">
 						<h2>Additional information</h2>
 						$AdditionalInformation
+						
+						<% if PDQLink %>
+						<br /><hr /><br />
+						<p>
+							<a href="$PDQLink">See related evidence at PDQ-Evidence</a>
+						</p>
+						<% end_if %>
 					</div>					
 					<div class="clear"></div><br /><br /><div class="clear"></div>
 					<div id="SummaryFor">

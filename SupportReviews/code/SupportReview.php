@@ -17,7 +17,6 @@ class SupportReview extends DataObject Implements PermissionProvider {
 		"SummaryOfFindings" => "HTMLText",
 		"RelevanceOfTheReview" => "HTMLText",
 		"AdditionalInformation" => "HTMLText",
-
 		// Sidebar
 		"SummaryFor" => "HTMLText",
 		"SummaryBasedOn" => "HTMLText",
@@ -27,7 +26,10 @@ class SupportReview extends DataObject Implements PermissionProvider {
 		"DateOfReview" => "Date",
 		"TitleOfReview" => "Varchar(255)",
 		"AuthorOfReview" => "Varchar(255)",
-		"AuthorOfSummary" => "Varchar(255)"
+		"AuthorOfSummary" => "Varchar(255)",
+
+		"PDQLink" => "Varchar(255)",
+		"CochraneLink" => "Varchar(255)"
 	);
 	static $has_one = array(
 		'SRCategory' => 'SRCategory',
@@ -47,7 +49,8 @@ class SupportReview extends DataObject Implements PermissionProvider {
 		'Title',
 		'Category',
 		'PublicationStatus',
-		'InProgress'
+		'InProgress',
+		'DateOfReview'
 	);
 
 	public static $indexes = array(
