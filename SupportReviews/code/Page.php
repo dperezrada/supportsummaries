@@ -68,8 +68,21 @@ class Page_Controller extends ContentController {
 		$locale = $this->Locale;
 		if(!isset($_GET['start']) || !is_numeric($_GET['start']) || (int)$_GET['start'] < 1) $_GET['start'] = 0;
 		$SQL_start = (int)$_GET['start'];
+		$filter = "";
+		if(isset($_GET['category']) && $_GET['category']){
+			$filter = " `SRCategoryID` = ". $_GET['category'] ." AND ";
+		} 
+		if(isset($_GET['year']) && $_GET['year']){
+			$ago = strtotime(($_GET['year']." years ago"));
+			$start_date = date('Y-m-d', $ago);
+			$filter .= "`DateOfReview` > '$start_date' AND ";
+		}
+
 //		$pages = DataObject::get("SiteTree","MATCH (Title,Content) AGAINST ('$query' IN BOOLEAN MODE) AND `Locale` ='".$locale."'");
-		$Reviews = DataObject::get("SupportReview","MATCH (Title, Summary,Background, AboutSummaryTable,SummaryOfFindings, RelevanceOfTheReview, AdditionalInformation) AGAINST ('$query' IN BOOLEAN MODE) AND `Published` = 1 AND `Locale` ='".$locale."'", 0, 0, "{$SQL_start},10");
+		$Reviews = DataObject::get("SupportReview","MATCH (Title, Summary,Background, AboutSummaryTable,SummaryOfFindings, RelevanceOfTheReview, AdditionalInformation) AGAINST ('$query' IN BOOLEAN MODE) AND `Published` = 1 AND ".$filter." `Locale` ='".$locale."'", 0, 0, "{$SQL_start},10");
+		if(!$Reviews){
+			$Reviews = new DataObject();
+		}
 		// $searchresults = new DataObjectSet();
 //		$searchresults->merge($pages);
 		// $searchresults->merge($Reviews);
