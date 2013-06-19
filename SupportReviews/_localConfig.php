@@ -4,18 +4,18 @@ unset( $GLOBALS['databaseConfig'] );
  // * Use this section if you have an _ss_environment.php
 
 $GLOBALS['databaseConfig'] = array(
-"type" => "MySQLDatabase",
-"server" => "localhost",
+	"type" => "MySQLDatabase",
+	"server" => "localhost",
    "username" => "root",
    "password" => "root",
-   "database" => "supportsummaries"
+   "database" => "support"
 );
 
 // Your database name goes here
 #global $database;$database = "support";
 
 // Use _ss_environment.php file for configuration
-require_once("conf/ConfigureFromEnv.php");
+// require_once("conf/ConfigureFromEnv.php");
 
 // Admin login
 Security::setDefaultAdmin('dos', 'q1w2e3');
