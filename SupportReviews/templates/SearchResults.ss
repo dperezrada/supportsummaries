@@ -46,6 +46,7 @@
 									</p>
 								</div>
 							<% end_if %>
+							<p> Summary of this review is in progress. <img class="in_progress" src="SupportReviews/images/in_progress.png"/> The link leads to the review in PDQ-Evidence.</p>
 						<% else %>
 							<div class="article">
 								<p>

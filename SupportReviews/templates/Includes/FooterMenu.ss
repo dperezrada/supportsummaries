@@ -3,7 +3,7 @@
 		<ul>
 			<% control FooterMenu %>
 				<li>
-						<a class="$LinkingMode $FirstLast" href="$Link" title="<% _t('Head.GOTO','ir a ') %> $Title">$MenuTitle</a>
+						<a class="$LinkingMode $FirstLast" href="$Link" title="<% _t('Head.GOTO','Go to ') %> $Title">$MenuTitle</a>
 				</li>
 			<% end_control %>
 		</ul>

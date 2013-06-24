@@ -52,7 +52,7 @@
 				</div>
 				<% end_if %>			
 			<% else %>
-				<% _t('SupportDocsPage.THEREISNOREVIEWSINTHISCATEGORY','there is no reviews in this category') %>
+				<% _t('SupportDocsPage.THEREISNOREVIEWSINTHISCATEGORY','There are no reviews in this category') %>
 			<% end_if %>
 
 

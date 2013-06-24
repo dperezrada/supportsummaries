@@ -8,11 +8,11 @@ $GLOBALS['databaseConfig'] = array(
 	"server" => "localhost",
    "username" => "root",
    "password" => "root",
-   "database" => "support"
+   "database" => "supportsummaries"
 );
 
 // Your database name goes here
-#global $database;$database = "support";
+#global $database;$database = "supportsummaries";
 
 // Use _ss_environment.php file for configuration
 // require_once("conf/ConfigureFromEnv.php");
