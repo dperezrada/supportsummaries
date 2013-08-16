@@ -30,6 +30,7 @@ class SupportReview extends DataObject Implements PermissionProvider {
 
 		"PDQLink" => "Varchar(255)",
 		"CochraneLink" => "Varchar(255)"
+		"PubMedLink" => "Varchar(255)",
 	);
 	static $has_one = array(
 		'SRCategory' => 'SRCategory',

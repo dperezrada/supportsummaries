@@ -14,8 +14,8 @@
 						<% control Children %>
 							<li><a href="$Link">$Title</a></li>
 							<% if InProgress %>
-		<span class="inprogress">(In Progress)</span>
-	<% end_if %>
+								<span class="inprogress">(In Progress)</span>
+							<% end_if %>
 						<% end_control %>
 						</ul>
 					<% end_control %>

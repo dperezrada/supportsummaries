@@ -7,7 +7,9 @@
 					<p class="date">$Date.Month, $Date.Year - SUPPORT Summary of a systematic review <span id="print" >| 
 						<a href="javascript:window.print()"><% _t('ReviewPage.PRINT','print this article') %></a> | 
 						<!-- <a href="http://pdfcrowd.com/url_to_pdf/?use_print_media=1">download PDF </span></a> -->
-						<a href="$PDF.URL">download PDF </span></a>
+						<% if PDF %>
+							<a href="$PDF.URL">download PDF </span></a>
+						<% end_if %>
 					</p>
 					<h1>$Title</h1>
 					
@@ -87,8 +89,13 @@
 				<h2>About the systematic review underlying this summary</h2>
 				$AboutSummaryTable
 				<p>
-					$SummaryBasedOn
+					$SummaryBasedOn 
+					<% if PubMedLink %><a href="$PubMedLink">See in PubMed</a> <% end_if %>
+					<% if CochraneLink %><a href="$CochraneLink">See in Cochrame</a> <% end_if %>
+					<% if PDQLink %><a href="$PDQLink">See in PDQ</a><% end_if %>
+					
 				</p>
+
 				
 			</div>
 			

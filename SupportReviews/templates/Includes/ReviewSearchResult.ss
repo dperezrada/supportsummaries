@@ -3,15 +3,15 @@
 		<% if InProgress %>
 			<% if PDQLink %>
 				href="$PDQLink"
-			<% else %>
-				href="#"
 			<% end_if %>
 		<% else %>
 			href="{$Top.SupportURL}/show/$URLSegment"
 		<% end_if %>
 	>
 	<% if InProgress %>
-	 <img class="in_progress" src="/SupportReviews/images/in_progress.png" />
+		<% if PDQLink %>
+			<img class="in_progress" src="/SupportReviews/images/in_progress.png" />
+		<% end_if %>
 	<% end_if %>
 	$Title</a><% if InProgress %>
 		<span class="inprogress">(In Progress)</span>
