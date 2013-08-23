@@ -46,7 +46,7 @@ class Page_Controller extends ContentController {
 		$supportReviews = DataObject::get('SupportReview');
 		$rss = new RSSFeed($supportReviews, '$supportReviews->Link', "Support reviews feed");
 		$rss->outputToBrowser();
-	}
+	}	
 
 
 
@@ -65,19 +65,29 @@ class Page_Controller extends ContentController {
 		$SupportDocsPage = DataObject::get_one("SupportDocsPage");
 		$data = $_REQUEST; 
 		$query = htmlspecialchars($data['Search'], ENT_QUOTES,'UTF-8'); 
+
+		$selected_filters = Array(
+			'year' => '',
+			'category' => ''
+		);
+		$selected_filters['query'] = $query;
+
+		$query =  "+".implode(' +', preg_split ( '/\s+/' , $query));
 		$locale = $this->Locale;
+		
 		if(!isset($_GET['start']) || !is_numeric($_GET['start']) || (int)$_GET['start'] < 1) $_GET['start'] = 0;
 		$SQL_start = (int)$_GET['start'];
 		$filter = "";
 		if(isset($_GET['category']) && $_GET['category']){
+			$selected_filters['category'] = $_GET['category'];
 			$filter = " `SRCategoryID` = ". $_GET['category'] ." AND ";
 		} 
 		if(isset($_GET['year']) && $_GET['year']){
+			$selected_filters['year'] = $_GET['year'];
 			$ago = strtotime(($_GET['year']." years ago"));
 			$start_date = date('Y-m-d', $ago);
 			$filter .= "`DateOfReview` > '$start_date' AND ";
 		}
-
 //		$pages = DataObject::get("SiteTree","MATCH (Title,Content) AGAINST ('$query' IN BOOLEAN MODE) AND `Locale` ='".$locale."'");
 		$Reviews = DataObject::get("SupportReview","MATCH (Title, Summary,Background, AboutSummaryTable,SummaryOfFindings, RelevanceOfTheReview, AdditionalInformation) AGAINST ('$query' IN BOOLEAN MODE) AND `Published` = 1 AND ".$filter." `Locale` ='".$locale."'", 0, 0, "{$SQL_start},10");
 		if(!$Reviews){
@@ -91,7 +101,8 @@ class Page_Controller extends ContentController {
 			$templateData = array(
 				'Results' => $Reviews,
 				'SearchQueryTitle' => $form->getSearchQuery($data),
-				"SupportURL" => $SupportDocsPage->URLSegment
+				"SupportURL" => $SupportDocsPage->URLSegment,
+				"selected_filters" => $selected_filters
 			);
 
 			return $this->customise($templateData)->renderWith(

@@ -37,10 +37,18 @@ class SRCategory extends DataObject {
 		return DataObject::get_one("SupportDocsPage")->Link("percategory/$this->ID");
 	}
 
+	public function SearchLink() {
+		$year = isset($_GET['year']) ? $_GET['year'] : null;
+		$search = isset($_GET['Search']) ? $_GET['Search'] : null;
+		return "/home/SearchForm?Search=$search&category=$this->ID&year=$year";
+	}
+
 
 	public function Current() {
-		$r = Controller::curr()->getRequest();
-		return $r->param('Action') == "percategory" && $r->param('ID') == $this->ID;
+		$category = isset($_GET['category']) ? $_GET['category'] : null;
+		return $category == $this->ID;
+		// $r = Controller::curr()->getRequest();
+		// return $r->param('Action') == "percategory" && $r->param('ID') == $this->ID;
 	}
 	
 	
