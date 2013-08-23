@@ -1263,6 +1263,9 @@ li.sfHover > a > .sf-sub-indicator {
 .search .browse a:hover {
   text-decoration: underline;
 }
+.search .browse a:visited {
+  color: #096fad;
+}
 .search .browse span {
   display: none;
 }
@@ -2556,6 +2559,9 @@ li.sfHover > a > .sf-sub-indicator {
 }
 .search .browse a:hover {
   text-decoration: underline;
+}
+.search .browse a:visited {
+  color: #096fad;
 }
 .search .browse span {
   display: none;
