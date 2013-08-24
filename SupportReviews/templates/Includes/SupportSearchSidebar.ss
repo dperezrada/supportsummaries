@@ -15,16 +15,23 @@
 		<% end_if %>
 	</ul>
 	<h3><% _t('SupportSearchSidebar.PERYEAR','Per Year') %></h3>
-	<ul>
+	<script>
+	$(document).ready(
+		function(){
+			$("#year$selected_filters.year").addClass('current');
+		}
+	);
+	</script>
+	<ul id="year_filter">
 		<% if selected_filters.query %>
-			<li><a <% if selected_filters.year %>class="current"<% end_if %> href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year="><% _t('SupportSearchSidebar.ALL','All') %></a></li>
-			<li><a href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year=1"><% _t('SupportSearchSidebar.LASTYEAR','Last Year') %></a></li>
-			<li><a href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year=5"><% _t('SupportSearchSidebar.LATEST5YEARS','Latest 5 Years') %></a></li>
-			<li><a href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year=10"><% _t('SupportSearchSidebar.LATEST10YEARS','Latest 10 Years') %></a></li>
+			<li><a id="year" href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year="><% _t('SupportSearchSidebar.ALL','All') %></a></li>
+			<li><a id="year1" href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year=1"><% _t('SupportSearchSidebar.LASTYEAR','Last Year') %></a></li>
+			<li><a id="year5" href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year=5"><% _t('SupportSearchSidebar.LATEST5YEARS','Latest 5 Years') %></a></li>
+			<li><a id="year10" href="/home/SearchForm?Search=$selected_filters.query&category=$selected_filters.category&year=10"><% _t('SupportSearchSidebar.LATEST10YEARS','Latest 10 Years') %></a></li>
 		<% else %>
-			<li><a href="$SupportDocsPage.YearLink(1)"><% _t('SupportSearchSidebar.LASTYEAR','Last Year') %></a></li>
-			<li><a href="$SupportDocsPage.YearLink(5)"><% _t('SupportSearchSidebar.LATEST5YEARS','Latest 5 Years') %></a></li>
-			<li><a href="$SupportDocsPage.YearLink(10)"><% _t('SupportSearchSidebar.LATEST10YEARS','Latest 10 Years') %></a></li>
+			<li><a id="year1" href="$SupportDocsPage.YearLink(1)"><% _t('SupportSearchSidebar.LASTYEAR','Last Year') %></a></li>
+			<li><a id="year5" href="$SupportDocsPage.YearLink(5)"><% _t('SupportSearchSidebar.LATEST5YEARS','Latest 5 Years') %></a></li>
+			<li><a id="year10" href="$SupportDocsPage.YearLink(10)"><% _t('SupportSearchSidebar.LATEST10YEARS','Latest 10 Years') %></a></li>
 		<% end_if %>
 	</ul>
 </div>
