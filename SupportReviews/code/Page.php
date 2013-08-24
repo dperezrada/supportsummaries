@@ -102,7 +102,8 @@ class Page_Controller extends ContentController {
 				'Results' => $Reviews,
 				'SearchQueryTitle' => $form->getSearchQuery($data),
 				"SupportURL" => $SupportDocsPage->URLSegment,
-				"selected_filters" => $selected_filters
+				"selected_filters" => $selected_filters,
+				'ClassName' => 'Search'
 			);
 
 			return $this->customise($templateData)->renderWith(
