@@ -12,9 +12,16 @@
 						<h2>$SRCategory.i18nTitle</h2>
 						<ul>
 						<% control Children %>
-							<li><a href="$Link">$Title</a></li>
 							<% if InProgress %>
-								<span class="inprogress">(In Progress)</span>
+								<% if PDQLink %>
+									<li>
+										<a href="$PDQLink">$Title</a>
+								<% else %>
+									<li><a href="#">$Title</a>
+								<% end_if %>
+								<span class="inprogress">(In Progress)</span></li>
+							<% else %>
+								<li><a href="$Link">$Title</a></li>
 							<% end_if %>
 						<% end_control %>
 						</ul>
@@ -22,10 +29,17 @@
 				<% else %>
 				<ul>
 					<% control Reviews %>
-						<li><a href="$Link">$Title</a>
 						<% if InProgress %>
-						<span class="inprogress">(In Progress)</span>
-						<% end_if %> 
+							<% if PDQLink %>
+								<li>
+									<a href="$PDQLink">$Title</a>
+							<% else %>
+								<li><a href="#">$Title</a>
+							<% end_if %>
+							<span class="inprogress">(In Progress)</span></li>
+						<% else %>
+							<li><a href="$Link">$Title</a></li>
+						<% end_if %>
 						</li>
 					<% end_control %>
 				</ul>
