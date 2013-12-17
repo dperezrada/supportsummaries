@@ -1,8 +1,8 @@
 <?php
 class SupportReviewES extends SupportReview Implements PermissionProvider {
 
-	static $singular_name = "Resumen Support";
-	static $plural_name = "Resúmenes Support";
+	static $singular_name = "Resumen SUPPORT";
+	static $plural_name = "Resúmenes SUPPORT";
 	
 	public function providePermissions() {
 		return array(

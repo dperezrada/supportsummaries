@@ -40,7 +40,7 @@ $lang['es_ES']['Head']['GOTO'] = 'ir a';
 
 
 $lang['es_ES']['Head']['SLOGAN'] = 'Evidencia sobre el efecto de intervenciones en los sistemas de salud,<br />relevantes para países de ingresos bajos y medios';
-$lang['es_ES']['Head']['SUPPORTSUMMARIES'] = 'Resúmenes Support';
+$lang['es_ES']['Head']['SUPPORTSUMMARIES'] = 'Resúmenes SUPPORT';
 $lang['es_ES']['HomePage']['SUPPORTSTRUCTUREDSUMMARIESOFSYSTEMATICREVIEWS'] = 'Resúmenes estructurados SUPPORT de revisiones sistemáticas';
 $lang['es_ES']['HomePage']['BROWSESUMMARIES'] = 'Listar resúmenes';
 $lang['es_ES']['Search']['OR'] = 'o ';
