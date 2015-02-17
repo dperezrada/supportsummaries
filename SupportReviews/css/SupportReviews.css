@@ -1504,7 +1504,8 @@ body#SupportReview {
   font-weight: bold;
 }
 #SupportReview #bd .sidebar h4 {
-  color: #111;
+  color: #5581B9;
+  font-weight:bold;
   font-size: 1.3em;
   line-height: 1.25em;
 }
