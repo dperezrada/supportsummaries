@@ -26,8 +26,8 @@
 						<h4>Who is this summary for?</h4>
 						$SummaryFor
 						<h4 style="background:transparent url('SupportReviews/images/exclamacion.png') no-repeat left center;padding-left:30px;">This summary includes:</h4>
-						<ul><li>Key findings from research based on a systematic review</li>
-							<li>Considerations about the relevance of this research for low and middle- income countries</li>
+						<ul><li><b>Key findings</b> from research based on a systematic review</li>
+							<li><b>Considerations about the relevance of this research </b> for low and middle- income countries</li>
 						</ul>
 						<h4 style="background:transparent url('SupportReviews/images/equis.png') no-repeat left center;padding-left:30px;">Not included:</h4>
 						<ul><li>Recommendations</li>

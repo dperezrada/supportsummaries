@@ -7,10 +7,11 @@ $GLOBALS['databaseConfig'] = array(
 	"type" => "MySQLDatabase",
 	"server" => "localhost",
    "username" => "root",
-   "password" => "root",
-   "database" => "supportsummaries"
+   "password" => "",
+   "database" => "support_summaries"
 );
 
+date_default_timezone_set('UTC');
 // Your database name goes here
 #global $database;$database = "supportsummaries";
 
