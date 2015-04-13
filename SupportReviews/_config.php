@@ -1,6 +1,7 @@
 <?php
 
 global $project; $project = 'SupportReviews';
+date_default_timezone_set('UTC');
 
 GD::set_default_quality(100);
 i18n::set_locale('en_US');
@@ -14,19 +15,19 @@ Translatable::set_allowed_locales(array(
 	'es_ES',
 	'en_US',
 	'de_DE',
-	'fr_FR', 
+	'fr_FR',
 ));
 
 // Breadcrumbs
 SiteTree::$breadcrumbs_delimiter = "<span> &raquo; </span>";
 
-// Enable i18n 
+// Enable i18n
 // i18n::enable();
 // i18n::set_locale('nl_NL');
 // i18n::set_default_lang('nl');
 
 CMSMenu::remove_menu_item("SecurityAdmin");
-CMSMenu::remove_menu_item("Roles");	
+CMSMenu::remove_menu_item("Roles");
 
 MySQLDatabase::set_connection_charset('utf8');
 
