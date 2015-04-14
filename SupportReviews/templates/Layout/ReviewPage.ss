@@ -73,12 +73,12 @@
 			    <div class="sidebar">
 					<div class="box">
 						<h4>How this summary was prepared</h4>
-						<p>After searching widely for systematic reviews that can help inform decisions about health systems, we have selected ones that provide information that is relevant to low and middle-income countries. The methods used to assess the quality of the review and to make judgements about its relevance are described in the <a href="http://www.support-collaboration.org/summaries/methods.htm" title="methods for doing support reviews" target="_blank">methods page</a> on our <a href="http://www.support-collaboration.org/summaries/methods.htm" title="methods for doing support reviews" target="_blank">support-collaboration.org website</a></p>
+						<p>After searching widely for systematic reviews that can help inform decisions about health systems, we have selected ones that provide information that is relevant to low-income countries. The methods used to assess the reliability of the review and to make judgements about its relevance are described <a href="http://www.supportsummaries.org/methods" title="methods for doing support reviews" target="_blank"> here</a></p>
 
 						
 						<h4>Knowing what’s not known is important</h4>
-						<p>A good quality review might not find any studies from low and middle-income countries or might not find any well-designed studies. Although that is disappointing, it is important to know what is not known as well as what is known.</p>
-						   	
+						<p>A reliable review might not find any studies from low-income countries or might not find any well-designed studies. Although that is disappointing, it is important to know what is not known as well as what is known.</p>
+						<p>A lack of evidence does not mean a lack of effects. It means the effects are uncertain.  When there is a lack of evidence, consideration should be given to monitoring and evaluating the effects of intervention, if it is used.</p>   	
 					</div>
 			    </div>
 			</div>
@@ -110,16 +110,17 @@
 					<div id="SummaryOfFindings">
 						<div class="sidebar">
 							<div class="box">
-								<h4>About quality of  evidence (GRADE) </h4>
+								<h4>About the certainty of the  evidence (GRADE) </h4>
 								<p> <% include High %><br />
-									<strong>High</strong>: Further research is very unlikely to change our confidence in the estimate of effect.</p>
+									<strong>High</strong>: It is very likely that the effect will be close to what was found in the research.</p>
 								<p> <% include Moderate %><br />
-									<strong>Moderate</strong>: Further research is likely to have an important impact on our confidence in the estimate of effect and may change the estimate.</p>
+									<strong>Moderate</strong>: It is likely that the effect will be close to what was found in the research, but there is a possibility that it will be substantially different.</p>
 								<p> <% include Low %><br />
-									<strong>Low</strong>: Further research is very likely to have an important impact on our confidence in the estimate of effect and is likely to change the estimate.</p>
+									<strong>Low</strong>: It is likely that the effect will be substantially different from what was found in the research, but the research provides an indication of what might be expected.</p>
 								<p> <% include VeryLow %><br />
-									<strong>Very low</strong>: We are very uncertain about the estimate.</p>
-								<p><a href="/support/show/$ID#AdditionalInformation" title="More information">More information</a></p>
+									<strong>Very low</strong>: The anticipated effect is very uncertain and the research does not provide a reliable indication of what might be expected.</p>
+								<p>* This is sometimes referred to as 'quality of evidence' or 'confidence in the estimate'.</p>
+								<p>See last page for more information.</p>
 							</div>
 						</div>
 						
