@@ -120,7 +120,7 @@
 								<p> <% include VeryLow %><br />
 									<strong>Very low</strong>: The anticipated effect is very uncertain and the research does not provide a reliable indication of what might be expected.</p>
 								<p>* This is sometimes referred to as 'quality of evidence' or 'confidence in the estimate'.</p>
-								<p>See last page for more information.</p>
+								<p>See <a href="#AdditionalInformation" > last page </a> for more information.</p>
 							</div>
 						</div>
 						

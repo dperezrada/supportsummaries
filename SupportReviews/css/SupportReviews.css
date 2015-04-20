@@ -1404,6 +1404,8 @@ body#SupportReview {
 #SupportReview #bd #AboutSummaryTable table thead tr th {
   border-top: 1px solid #a9a9a9;
   border-bottom: 1px solid #4e4e4e;
+  background-color: #F1F1F1;
+
 }
 #SupportReview #bd #AboutSummaryTable table thead tr th span.hide {
   visibility: hidden;
@@ -1450,11 +1452,18 @@ body#SupportReview {
   background-color: #096fad;
   color: #fff;
 }
+/*
 #SupportReview #bd #SummaryOfFindings table tbody tr td.titles.grey {
-  background-color: #cbcccb;
+  background-color: #cbcccb;  grey:#ebebeb
 }
+*/
+#SupportReview #bd #SummaryOfFindings table tbody tr td.titles.grey {
+  background-color: #4D9DD9;
+}
+
+
 #SupportReview #bd #SummaryOfFindings table tbody tr td.grey {
-  background-color: #ebebeb;
+  background-color: #F7F7F7;
   font-weight: bold;
 }
 #SupportReview #bd #RelevanceOfTheReview table tr th,
