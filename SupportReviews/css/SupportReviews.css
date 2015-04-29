@@ -1466,16 +1466,38 @@ body#SupportReview {
   background-color: #F7F7F7;
   font-weight: bold;
 }
+#SupportReview #bd #RelevanceOfTheReview table tr th{
+background-color: #4d9dd9;
+}
+
 #SupportReview #bd #RelevanceOfTheReview table tr th,
 #SupportReview #bd #RelevanceOfTheReview table tr td {
   text-align: left;
   vertical-align: top;
 }
+
+#SupportReview #bd #RelevanceOfTheReview table tr td.column1 {
+background: url(../images/lvl1bullet.png) no-repeat;
+padding-left:20px;
+background-size: 20px 20px;
+background-position: 0px 8px;
+margin: 0 0 10px;
+}
+
+#SupportReview #bd #RelevanceOfTheReview table tr td.column2 {
+  background: url(../images/arrow.jpg) no-repeat;
+  padding-left:20px;
+  background-size: 20px 20px;
+  background-position: 0px 8px;
+  margin: 0 0 10px;
+}
+
 #SupportReview #bd #RelevanceOfTheReview table tr td.subtitle {
-  background-color: #ebebeb;
+  background-color: #f1f1f1;
   border: 1px solid #4e4e4e;
   border-width: 1px 0px;
 }
+
 #SupportReview #bd #AdditionalInformation p {
   margin: 0;
 }
