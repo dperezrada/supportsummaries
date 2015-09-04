@@ -49,7 +49,7 @@
 						<h4>What is a systematic review?</h4>
 						<p>A summary of studies addressing a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise the relevant research, and to collect and analyse data from the included studies.	</p>
 						<hr>
-						<p><strong>SUPPORT</strong> &ndash; an international collaboration funded by the EU 6th Framework Programme to support the use of policy relevant reviews and trials to inform decisions about maternal and child health in low and middle-income countries. <a title="www.support-collaboration.org" href="http://www.support-collaboration.org">www.support-collaboration.org</a></p>					
+						<p><strong>SUPPORT</strong> &ndash; was an international project to support the use of policy relevant reviews and trials to inform decisions about maternal and child health in low- and middle-income countries, funded by the European Commission (FP6) and the Canadian Institutes of Health Research.</p>					
 						<p><strong><a href="http://www.support-collaboration.org/summaries/explanations.htm" target="_blank" title="Glossary of terms used in this report">Glossary of terms used in this report</a></strong></p>
 						<p><strong><a href="/support/show/$ID#AdditionalInformation">Background references on this topic</a></strong></p>	
 					</div>
