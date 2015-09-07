@@ -23,17 +23,20 @@
 				<div class="sidebar"> 
 					<img src="SupportReviews/images/extra-logos.png" width="220px" />
 					<div class="box">
+						<hr>
 						<h4>Who is this summary for?</h4>
 						$SummaryFor
-						<h4 style="background:transparent url('SupportReviews/images/exclamacion.png') no-repeat left center;padding-left:30px;">This summary includes:</h4>
+						<h4 style="margin-top:15px;margin-bottom:3px;background:transparent url('SupportReviews/images/exclamacion.png') no-repeat left center;padding-left:30px;">This summary includes:</h4>
 						<ul><li><b>Key findings</b> from research based on a systematic review</li>
 							<li><b>Considerations about the relevance of this research </b> for low and middle- income countries</li>
 						</ul>
-						<h4 style="background:transparent url('SupportReviews/images/equis.png') no-repeat left center;padding-left:30px;">Not included:</h4>
+						<h4 style="margin-top:10px;margin-bottom:3px;background:transparent url('SupportReviews/images/equis.png') no-repeat left center;padding-left:30px;">Not included:</h4>
 						<ul><li>Recommendations</li>
 							<li>Additional evidence not included in the systematic review</li>
 							<li>Detailed descriptions of interventions or their implementation</li>
-						</ul>					
+							<hr>
+						</ul>
+											
 						<h4>This summary is based on the following systematic review:</h4>
 						<p>$SummaryBasedOn</p>
 						<% if PDQLink %>
@@ -47,10 +50,12 @@
 						</p>
 						<% end_if %>
 						<h4>What is a systematic review?</h4>
-						<p>A summary of studies addressing a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise the relevant research, and to collect and analyse data from the included studies.	</p>
+						<p style="margin-bottom:1px;"> A summary of studies addressing a clearly formulated question that uses systematic and explicit methods to identify, select, and critically appraise the relevant research, and to collect and analyse data from the included studies.	
+
+						</p>
 						<hr>
-						<p><strong>SUPPORT</strong> &ndash; was an international project to support the use of policy relevant reviews and trials to inform decisions about maternal and child health in low- and middle-income countries, funded by the European Commission (FP6) and the Canadian Institutes of Health Research.</p>					
-						<p><strong><a href="http://www.support-collaboration.org/summaries/explanations.htm" target="_blank" title="Glossary of terms used in this report">Glossary of terms used in this report</a></strong></p>
+						<p style="margin-bottom:1px;"><strong>SUPPORT</strong> &ndash; was an international project to support the use of policy relevant reviews and trials to inform decisions about maternal and child health in low- and middle-income countries, funded by the European Commission (FP6) and the Canadian Institutes of Health Research.</p>					
+						<p ><strong><a href="http://www.supportsummaries.org/glossary-of-terms/" target="_blank" title="Glossary of terms used in this report">Glossary of terms used in this report</a></strong></p>
 						<p><strong><a href="/support/show/$ID#AdditionalInformation">Background references on this topic</a></strong></p>	
 					</div>
 				</div>
@@ -73,7 +78,7 @@
 			    <div class="sidebar">
 					<div class="box">
 						<h4>How this summary was prepared</h4>
-						<p>After searching widely for systematic reviews that can help inform decisions about health systems, we have selected ones that provide information that is relevant to low-income countries. The methods used to assess the reliability of the review and to make judgements about its relevance are described <a href="http://www.supportsummaries.org/methods" title="methods for doing support reviews" target="_blank"> here</a></p>
+						<p>After searching widely for systematic reviews that can help inform decisions about health systems, we have selected ones that provide information that is relevant to low-income countries. The methods used to assess the reliability of the review and to make judgements about its relevance are described <a href="http://www.supportsummaries.org/how-support-summaries-are-prepared/" title="methods for doing support reviews" target="_blank"> here</a></p>
 
 						
 						<h4>Knowing what’s not known is important</h4>
@@ -112,14 +117,15 @@
 							<div class="box">
 								<h4>About the certainty of the  evidence (GRADE) </h4>
 								<p> <% include High %><br />
-									<strong>High</strong>: It is very likely that the effect will be close to what was found in the research.</p>
+									<strong>High</strong>: This research provides a very good indication of the likely effect. The likelihood that the effect will be substantially different† is low.</p>
 								<p> <% include Moderate %><br />
-									<strong>Moderate</strong>: It is likely that the effect will be close to what was found in the research, but there is a possibility that it will be substantially different.</p>
+									<strong>Moderate</strong>: This research provides a good indication of the likely effect. The likelihood that effect will be substantially different† is moderate.</p>
 								<p> <% include Low %><br />
-									<strong>Low</strong>: It is likely that the effect will be substantially different from what was found in the research, but the research provides an indication of what might be expected.</p>
+									<strong>Low</strong>: This research provides some indication of the likely effect. Howevver, the likelihood that it will be substantially different† is high.</p>
 								<p> <% include VeryLow %><br />
-									<strong>Very low</strong>: The anticipated effect is very uncertain and the research does not provide a reliable indication of what might be expected.</p>
+									<strong>Very low</strong>: This research does not provide a reliable indication of the likely effect.  The likelihood that the effect will be substantially different† is very high.</p>
 								<p>* This is sometimes referred to as 'quality of evidence' or 'confidence in the estimate'.</p>
+								<p>† Substantially different = a large enough difference that it might affect a decision.</p>
 								<p>See <a href="#AdditionalInformation" > last page </a> for more information.</p>
 							</div>
 						</div>
