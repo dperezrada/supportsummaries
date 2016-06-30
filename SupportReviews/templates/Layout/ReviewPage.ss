@@ -28,7 +28,7 @@
 						$SummaryFor
 						<h4 style="margin-top:15px;margin-bottom:3px;background:transparent url('SupportReviews/images/exclamacion.png') no-repeat left center;padding-left:30px;">This summary includes:</h4>
 						<ul><li><b>Key findings</b> from research based on a systematic review</li>
-							<li><b>Considerations about the relevance of this research </b> for low and middle- income countries</li>
+							<li><b>Considerations about the relevance of this research </b> for low income countries</li>
 						</ul>
 						<h4 style="margin-top:10px;margin-bottom:3px;background:transparent url('SupportReviews/images/equis.png') no-repeat left center;padding-left:30px;">Not included:</h4>
 						<ul><li>Recommendations</li>
@@ -149,7 +149,7 @@
 	<div class="wrapper typography">
 
 		<div id="RelevanceOfTheReview">
-			<h2>Relevance of the review for low and middle-income countries</h2>
+			<h2>Relevance of the review for low-income countries</h2>
 			$RelevanceOfTheReview
 		</div>
 	</div>		
