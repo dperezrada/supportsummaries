@@ -56,7 +56,7 @@
 						<hr>
 						<p style="margin-bottom:1px;"><strong>SUPPORT</strong> &ndash; was an international project to support the use of policy relevant reviews and trials to inform decisions about maternal and child health in low- and middle-income countries, funded by the European Commission (FP6) and the Canadian Institutes of Health Research.</p>					
 						<p ><strong><a href="http://www.supportsummaries.org/glossary-of-terms/" target="_blank" title="Glossary of terms used in this report">Glossary of terms used in this report</a></strong></p>
-						<p><strong><a href="/support/show/$ID#AdditionalInformation">Background references on this topic</a></strong></p>	
+						<p><strong><a href="#AdditionalInformation">Background references on this topic</a></strong></p>	
 					</div>
 				</div>
 			</div>
@@ -200,18 +200,18 @@
 			<div class="grid_1-4">
 				<div class="sidebar">
 					<div class="box">
-						<h4>About quality of evidence (GRADE)</h4>
-						<p> The quality of the evidence is a judgement about the extent to which we can be confident that the estimates of effect are correct. These judgements are made using the GRADE system, and are provided for each outcome. The judgements are based on the type of study design (randomised trials versus observational studies), the risk of bias, the consistency of the results across studies, and the precision of the overall estimate across studies. For each outcome, the quality of the evidence is rated as high, moderate, low or very low using the definitions on the <a href="/support/show/$ID#SummaryOfFindings" title="Summary of findings page">Summary of findings page</a>.</p>
-						<p> <a href="http://www.support-collaboration.org/summaries/grade2.pdf" title="For more information about GRADE">For more information about GRADE</a></p>
+						<h4>About certainty of evidence (GRADE)</h4>
+						<p> The “certainty of the evidence” is an assessment of how good an indication the research provides of the likely effect, i.e. the likelihood that the effect will be substantially different from what the research found. By “substantially different” we mean a large enough difference that it might affect a decision. These judgements are made using the GRADE system, and are provided for each outcome. The judgements are based on the study design (randomised trials versus observational studies), factors that reduce the certainty (risk of bias, inconsistency, indirectness, imprecision, and publication bias) and factors that increase  the certainty (a large effect, a dose response relationship, and plausible confounding). For each outcome, the certainty of the evidence is rated as high, moderate, low or very low using the definitions on page 3.</p>
+						<p> <a href="http://www.supportsummaries.org/grade" title="For more information about GRADE"><strong>For more information about GRADE </strong></a></p>
 					</div>
 					<div class="box">
 						<h4>SUPPORT collaborators:</h4>
-						<p> The Alliance for Health Policy and Systems Research (HPSR) is an international collaboration aiming to promote the generation and use of health policy and systems research as a means to improve the health systems of developing countries. www.who.int/alliance-hpsr</p>
-						<p> The Cochrane Effective Practice and Organisation of Care Group (EPOC) is a Collaborative Review Group of the Cochrane Collaboration: an international organisation that aims to help people make well informed decisions about health care by preparing, maintaining and ensuring the accessibility of systematic reviews of the effects of health care interventions. www.epoc.cochrane.org</p>
-						<p> The Evidence-Informed Policy Network (EVIPNet) is an initiative to promote the use of health research in policymaking. Focusing on low and middle-income countries, EVIPNet promotes partnerships at the country level between policy-makers, researchers and civil society in order to facilitate both policy development and policy implementation through the use of the best scientific evidence available. <a href="http://www.who.int/rpc/evipnet/en/" title="www.who.int/rpc/evipnet/en/">www.who.int/rpc/evipnet/en/</a></p>
-						<p> <a href="http://www.support-collaboration.org" title="more information on this review">Click here for more information</a></p>
-						<p> <a href="http://www.support-collaboration.org/summaries/newsletter/" title="Receive e-mail notices of new SUPPORT summaries">Receive e-mail notices of new SUPPORT summaries</a></p>
-						<p> <a href="http://www.support-collaboration.org/feedback/" title="provide feedback about this summary">Provide feedback on this summary</a></p>					
+						<p>The Cochrane Effective Practice and Organisation of Care Group (EPOC) is part of the <a href="www.cochrane.org" >Cochrane Collaboration</a>.  The Norwegian EPOC satellite supports the production of Cochrane reviews relevant to health systems in low- and middle-income countries . <a href="www.epocoslo.cochrane.org">www.epocoslo.cochrane.org</a> </p>
+						<p><strong>The Evidence-Informed Policy Network (EVIPNet) </strong> is an initiative to promote the use of health research in policymaking in low- and middle-income countries. <a href="http://www.evipnet.org"> www.evipnet.org </a></p>
+						<p><strong>The Alliance for Health Policy and Systems Research (HPSR) </strong> is an international collaboration that promotes the generation and use of health policy and systems research in low- and middle-income countries. <a href="www.who.int/alliance-hpsr">www.who.int/alliance-hpsr</a></p>
+						<p><strong>Norad</strong>, the Norwegian Agency for Development Cooperation, supports the Norwegian EPOC satellite and the production of SUPPORT Summaries. <a href="www.norad.no">www.norad.no</a> </p>
+						<p><strong>The Effective Health Care Research Consortium</strong> is an international partnership that prepares Cochrane reviews relevant to low-income countries. <a href="www.evidence4health.org">www.evidence4health.org</a> </p>
+
 					</div>
 				</div>
 			</div>
