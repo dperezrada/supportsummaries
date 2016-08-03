@@ -206,12 +206,15 @@
 					</div>
 					<div class="box">
 						<h4>SUPPORT collaborators:</h4>
-						<p>The Cochrane Effective Practice and Organisation of Care Group (EPOC) is part of the <a href="www.cochrane.org" >Cochrane Collaboration</a>.  The Norwegian EPOC satellite supports the production of Cochrane reviews relevant to health systems in low- and middle-income countries . <a href="www.epocoslo.cochrane.org">www.epocoslo.cochrane.org</a> </p>
+						<p>The Cochrane Effective Practice and Organisation of Care Group (EPOC) is part of the <a href="http://www.cochrane.org" >Cochrane Collaboration</a>.  The Norwegian EPOC satellite supports the production of Cochrane reviews relevant to health systems in low- and middle-income countries . <a href="http://www.epocoslo.cochrane.org">www.epocoslo.cochrane.org</a> </p>
 						<p><strong>The Evidence-Informed Policy Network (EVIPNet) </strong> is an initiative to promote the use of health research in policymaking in low- and middle-income countries. <a href="http://www.evipnet.org"> www.evipnet.org </a></p>
-						<p><strong>The Alliance for Health Policy and Systems Research (HPSR) </strong> is an international collaboration that promotes the generation and use of health policy and systems research in low- and middle-income countries. <a href="www.who.int/alliance-hpsr">www.who.int/alliance-hpsr</a></p>
-						<p><strong>Norad</strong>, the Norwegian Agency for Development Cooperation, supports the Norwegian EPOC satellite and the production of SUPPORT Summaries. <a href="www.norad.no">www.norad.no</a> </p>
-						<p><strong>The Effective Health Care Research Consortium</strong> is an international partnership that prepares Cochrane reviews relevant to low-income countries. <a href="www.evidence4health.org">www.evidence4health.org</a> </p>
+						<p><strong>The Alliance for Health Policy and Systems Research (HPSR) </strong> is an international collaboration that promotes the generation and use of health policy and systems research in low- and middle-income countries. <a href="http://www.who.int/alliance-hpsr">www.who.int/alliance-hpsr</a></p>
+						<p><strong>Norad</strong>, the Norwegian Agency for Development Cooperation, supports the Norwegian EPOC satellite and the production of SUPPORT Summaries. <a href="http://www.norad.no">www.norad.no</a> </p>
+						<p><strong>The Effective Health Care Research Consortium</strong> is an international partnership that prepares Cochrane reviews relevant to low-income countries. <a href="http://www.evidence4health.org">www.evidence4health.org</a> </p>
 
+
+						<p><strong>To receive e-mail notices of new SUPPORT summaries or provide feedback on this summary, go to:</strong>
+						<a href="http://www.supportsummaries.org/contact"> www.supportsummaries.org/contact </a></p>
 					</div>
 				</div>
 			</div>
