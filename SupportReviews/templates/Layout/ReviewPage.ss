@@ -20,8 +20,8 @@
 				</div>
 			</div>
 			<div class="grid_1-4">
-				<div class="sidebar"> 
-					<img src="SupportReviews/images/extra-logos.png" width="220px" />
+				<div class="sidebar">
+					<img src="SupportReviews/images/extra-logos.png" width="255px" />
 					<div class="box">
 						<hr>
 						<h4>Who is this summary for?</h4>
