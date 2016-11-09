@@ -31,7 +31,7 @@
 
 
 					<% end_control %>
-					<% if Translations %>
+					<% if !Translations %>
 						<li>
 
 							<% control Translations %>
