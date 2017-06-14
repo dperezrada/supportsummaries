@@ -5,8 +5,14 @@
 			<div class="grid_3-4">
 				<div class="box">
 					<p class="date">$Date.Month, $Date.Year - SUPPORT Summary of a systematic review <span id="print" >| 
-						<a href="javascript: w=window.open('$PDF.URL'); w.print(); w.close(); "><% _t('ReviewPage.PRINT','print this article') %></a> | 
-						<!--a href="javascript:window.print()"><% _t('ReviewPage.PRINT','print this article') %></a-->  
+
+						<% if PDF %>
+							<a href="$PDF.URL" target="_blank"><% _t('ReviewPage.PRINT','print this article') %> </span></a> |
+						<% else %>
+							<a href="javascript:window.print()"><% _t('ReviewPage.PRINT','print this article') %></a> | 	
+						<% end_if %>
+
+						
 						<!-- <a href="http://pdfcrowd.com/url_to_pdf/?use_print_media=1">download PDF </span></a> -->
 						<% if PDF %>
 							<a href="$PDF.URL">download PDF </span></a>

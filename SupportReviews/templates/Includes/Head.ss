@@ -31,7 +31,14 @@
 
 
 					<% end_control %>
+					<% if !Translations %>
+						<li>
 
+							<% control Translations %>
+								<a hreflang="$Locale.RFC1766" href="$Link"><% _t('Page.TRANSLATIONS','available translations') %>: <img src="SupportReviews/images/{$Locale}.gif" title="$Title" /></a>
+							<% end_control %>
+						</li>
+					<% end_if %>
 				</ul>
 		</div>
 		<% if ClassName != HomePage %>
