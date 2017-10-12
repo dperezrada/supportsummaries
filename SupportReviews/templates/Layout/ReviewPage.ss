@@ -28,7 +28,14 @@
 			</div>
 			<div class="grid_1-4">
 				<div class="sidebar">
-					<img src="SupportReviews/images/extra-logos.png" width="255px" />
+					<div class="logos">
+						<img src="SupportReviews/images/logo_epistemonikos_fundacion.jpg"/>
+						<img src="SupportReviews/images/cochrane_logo.jpg"/>
+						<img src="SupportReviews/images/alliance_logo.png"/>
+						<img src="SupportReviews/images/evipnet_logo.png"/>
+						<img src="SupportReviews/images/norad_logo.gif"/>
+						<img src="SupportReviews/images/effective_logo.gif"/>
+					</div>
 					<div class="box">
 						<hr>
 						<h4>Who is this summary for?</h4>
