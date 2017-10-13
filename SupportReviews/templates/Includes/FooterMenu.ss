@@ -12,8 +12,8 @@
 		<img src="SupportReviews/images/alliance_logo.png"/>
 		<img src="SupportReviews/images/evipnet_logo.png"/>
 		<img src="SupportReviews/images/norad_logo.gif"/>
-		<img src="SupportReviews/images/effective_logo.gif"/>
-		<img src="SupportReviews/images/logo_epistemonikos_fundacion.jpg"/>
-		<img src="SupportReviews/images/cochrane_logo.jpg"/>
+		<img src="SupportReviews/images/effective_logo.png"/>
+		<img src="SupportReviews/images/logo_epistemonikos_fundacion.png"/>
+		<img src="SupportReviews/images/cochrane_logo.png"/>
 	</div>
 </div>
